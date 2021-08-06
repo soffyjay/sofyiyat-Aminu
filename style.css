@@ -3,11 +3,12 @@
     margin: 0;
     font-family: sans-serif;
     box-sizing:border-box;
-   
+
 }
 
 body{
     background-color:#f6f5f5;
+    width:100%;
 }
 ul{
     list-style:none;
@@ -16,7 +17,7 @@ a{
     text-decoration:none;
 }
 #main{
-    width:100%;
+   
     min-height:80vh;
     background-image:url('https://images.unsplash.com/photo-1605007493699-af65834f8a00?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80');
     background-repeat:no-repeat;
@@ -26,6 +27,7 @@ a{
 }
 .main-container{
     height:50vh;
+   
 }
 nav{
     display:flex;
@@ -35,15 +37,12 @@ nav{
     background-color:#ffffff;
     box-shadow:2px 2px 12px rgba(0,0,0,0.2);
     padding:0px 5%;
-    width:100%;
+   
   
     
 
 }
-#bars{
-    font-size:28px;
-    display:none;
-}
+
 a .logo{
     font:900;
     color:rgb(24, 23, 23);
@@ -58,11 +57,12 @@ a .logo{
 }
 nav ul{
     display:flex;
-  
+  justify-content:space-evenly;
+  width:40%;
 }
 
 nav ul li a{
-    margin:30px;
+   
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:#505050;
     font-size:15px;
@@ -74,7 +74,7 @@ nav ul li a{
 }
 .text-container{
     line-height:2;
-  
+ 
    height:100%;
    display:flex;
    align-items:center;
@@ -150,10 +150,7 @@ nav ul li a{
     font-size:18px;
     text-align:center;
 }
-.text-container a:hover{
-    background-color:#5fb5b5;
-    color:#fff;
-}
+
 
 .text-container span{
     color:#fff;
@@ -291,14 +288,12 @@ footer{
    
    .nav-links a{
        font:bold;
-       font-size:20px;
+       font-size:16px;
+      
+      
    }
    
-   #bars{
-    display:block;
-    cursor:pointer;
-}
-
+  
 
 
 @media only screen and (max-width: 450px){
@@ -318,5 +313,8 @@ footer{
     }
     #main{
         height:80vh;
+    }
+    nav ul{
+        width:60%;
     }
 }}
